@@ -1,0 +1,16 @@
+name: evo_gnn_perspective
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base=4.3.3
+  - r-tidyverse
+  - r-stringr
+  - r-readr
+  - r-dplyr
+  - r-tidyr
+  - r-reshape2
+  - r-ggplot2
+  - r-cowplot
+  - r-remotes
+
