@@ -12,7 +12,7 @@ prepare_summary <-
            exclude_year = 2022, architectures_levels) {
     summary_base <- df %>%
       mutate(`Neural Network` =
-             str_replace_all(`Neural Network`, "-", ", ")) %>%
+               str_replace_all(`Neural Network`, "-", ", ")) %>%
       separate_rows(`Neural Network`, sep = ",\\s*") %>%
       mutate(`Neural Network` =
                str_trim(`Neural Network`),
