@@ -11,7 +11,8 @@ prepare_summary <-
   function(df, remove_na_arch = c("Unknown", "NA"),
            exclude_year = 2022, architectures_levels) {
     summary_base <- df %>%
-      mutate(`Neural Network` = str_replace_all(`Neural Network`, "-", ", ")) %>%
+      mutate(`Neural Network` =
+             str_replace_all(`Neural Network`, "-", ", ")) %>%
       separate_rows(`Neural Network`, sep = ",\\s*") %>%
       mutate(`Neural Network` =
                str_trim(`Neural Network`),
@@ -38,9 +39,9 @@ prepare_summary <-
     all_years <- seq(min(summary_breakdown$Year), max(summary_breakdown$Year))
 
     summary_breakdown %>%
-    complete(Year = all_years, Architecture, fill = list(Count = 0)) %>%
-    mutate(Year = factor(Year, levels = all_years))
-}
+      complete(Year = all_years, Architecture, fill = list(Count = 0)) %>%
+      mutate(Year = factor(Year, levels = all_years))
+  }
 
 plot_pub <- function(data) {
   plot_a <-
