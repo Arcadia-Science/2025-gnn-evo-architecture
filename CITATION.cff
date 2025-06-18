@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: If you use this software, please cite the associated publication.
+title: 'Graph neural networks: A unifying predictive model architecture for evolutionary
+  applications'
+doi: 10.57844/arcadia-e7kq-frwh
+authors:
+- family-names: Bell
+  given-names: Audrey
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0009-0008-2270-1613
+- family-names: Patton
+  given-names: Austin H.
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0003-1286-9005
+- family-names: York
+  given-names: Ryan
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0002-1073-1494
+preferred-citation:
+  title: 'Graph neural networks: A unifying predictive model architecture for evolutionary
+    applications'
+  type: article
+  doi: 10.57844/arcadia-e7kq-frwh
+  authors:
+  - family-names: Patton
+    given-names: Austin H.
+    affiliation: Arcadia Science
+    orcid: https://orcid.org/0000-0003-1286-9005
+  - family-names: York
+    given-names: Ryan
+    affiliation: Arcadia Science
+    orcid: https://orcid.org/0000-0002-1073-1494
+  year: 2025
